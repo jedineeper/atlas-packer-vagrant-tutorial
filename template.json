@@ -1,7 +1,9 @@
 {
     "push": {
-      "name": "",
-      "vcs": true
+      "name": "jedineeper/atlas-test",
+      "exclude": [
+        ".git"
+      ]
     },
     "variables": {
         "atlas_username": "{{env `ATLAS_USERNAME`}}",
@@ -11,13 +13,13 @@
         {
             "type": "shell",
             "scripts": [
-                "scripts/base.sh",
-                "scripts/virtualbox.sh",
-                "scripts/vmware.sh",
-                "scripts/vagrant.sh",
-                "scripts/dep.sh",
-                "scripts/cleanup.sh",
-                "scripts/zerodisk.sh"
+                "scripts\\base.sh",
+                "scripts\\virtualbox.sh",
+                "scripts\\vmware.sh",
+                "scripts\\vagrant.sh",
+                "scripts\\dep.sh",
+                "scripts\\cleanup.sh",
+                "scripts\\zerodisk.sh"
             ],
             "override": {
                 "virtualbox-iso": {
